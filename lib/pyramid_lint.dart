@@ -13,6 +13,7 @@ import 'src/lints/dart/avoid_duplicate_import.dart';
 import 'src/lints/dart/avoid_dynamic.dart';
 import 'src/lints/dart/avoid_empty_blocks.dart';
 import 'src/lints/dart/avoid_inverted_boolean_expressions.dart';
+import 'src/lints/dart/avoid_list_filled_for_mutable_objects.dart';
 import 'src/lints/dart/avoid_nested_if.dart';
 import 'src/lints/dart/avoid_unused_parameters.dart';
 import 'src/lints/dart/boolean_prefix.dart';
@@ -60,6 +61,7 @@ class _PyramidLinter extends PluginBase {
         const AvoidDynamic(),
         const AvoidEmptyBlocks(),
         const AvoidInvertedBooleanExpressions(),
+        const AvoidListFilledForMutableObjects(),
         AvoidNestedIf.fromConfigs(configs),
         AvoidUnusedParameters.fromConfigs(configs),
         BooleanPrefix.fromConfigs(configs),
