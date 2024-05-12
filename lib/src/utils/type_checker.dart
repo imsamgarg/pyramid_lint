@@ -70,6 +70,11 @@ const spacerChecker = TypeChecker.fromName(
   packageName: 'flutter',
 );
 
+const customSliverViewChecker = TypeChecker.fromName(
+  'CustomSliverView',
+  packageName: 'flutter',
+);
+
 const expandedOrFlexibleChecker = TypeChecker.any(
   [
     expandedChecker,
