@@ -1,3 +1,4 @@
+// ignore_for_file: proper_controller_dispose, unused_field
 import 'package:flutter/widgets.dart';
 
 class DisposeControllerWidget extends StatefulWidget {
@@ -9,9 +10,13 @@ class DisposeControllerWidget extends StatefulWidget {
 }
 
 class DisposeControllerWidgetState extends State<DisposeControllerWidget> {
-  // ignore: avoid_multiple_declarations_per_line
-  late final _nameController = ValueNotifier(null),
-      _ageController = ValueNotifier(null);
+  late final _nameController = ValueNotifier(null);
+  late final _ageController = ValueNotifier(null);
+
+  @override
+  void dispose() {
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
