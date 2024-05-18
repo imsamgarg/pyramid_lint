@@ -23,6 +23,9 @@ class WrapWithSliverToBoxAdapterExample extends StatelessWidget {
             childCount: 10,
           ),
         ),
+        const SliverToBoxAdapter(
+          child: Text(''),
+        ),
       ],
     );
   }

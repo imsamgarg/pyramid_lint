@@ -70,8 +70,8 @@ const spacerChecker = TypeChecker.fromName(
   packageName: 'flutter',
 );
 
-const customSliverViewChecker = TypeChecker.fromName(
-  'CustomSliverView',
+const customScrolViewChecker = TypeChecker.fromName(
+  'CustomScrollView',
   packageName: 'flutter',
 );
 

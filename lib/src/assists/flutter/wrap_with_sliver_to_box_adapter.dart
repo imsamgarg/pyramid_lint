@@ -36,7 +36,7 @@ class WrapWithSliverToBoxAdapter extends DartAssist {
 
       if (parentWidget == null || parentWidget.staticType == null) return;
 
-      if (customSliverViewChecker
+      if (!customScrolViewChecker
           .isAssignableFromType(parentWidget.staticType!)) {
         return;
       }
