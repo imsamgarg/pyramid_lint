@@ -55,6 +55,21 @@ const flexChecker = TypeChecker.fromName(
   packageName: 'flutter',
 );
 
+const columnChecker = TypeChecker.fromName(
+  'Column',
+  packageName: 'flutter',
+);
+
+const rowChecker = TypeChecker.fromName(
+  'Row',
+  packageName: 'flutter',
+);
+
+const listViewChecker = TypeChecker.fromName(
+  'ListView',
+  packageName: 'flutter',
+);
+
 const expandedChecker = TypeChecker.fromName(
   'Expanded',
   packageName: 'flutter',
