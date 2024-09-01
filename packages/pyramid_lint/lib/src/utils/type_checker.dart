@@ -131,6 +131,16 @@ const valueNotifierChecker = TypeChecker.fromName(
   packageName: 'flutter',
 );
 
+const textChecker = TypeChecker.fromName(
+  'Text',
+  packageName: 'flutter',
+);
+
+const autoSizeTextChecker = TypeChecker.fromName(
+  'AutoSizeText',
+  packageName: 'auto_size_text',
+);
+
 const disposableControllerChecker = TypeChecker.any(
   [
     animationControllerChecker,
